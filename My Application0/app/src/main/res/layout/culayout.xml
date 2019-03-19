@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<com.example.qkhqk.myapplication.myEditText
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:drawableRight="@drawable/delete"
+    android:drawableLeft="@mipmap/back"
+    app:mytextcolor="@color/cadetblue"
+    app:myCaption="我是谁"
+    app:mytext="asdfkhafasd"
+    android:text=""/>
+
+    <com.example.qkhqk.myRelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/m2"
+        app:myBackImageID="@mipmap/back"
+        app:myBackText="返回"
+        app:myCaption="我是谁"
+        app:myCaptionLittle="qwewqe"
+        app:myCaptionLittleSize="10"
+        app:myCaptionLittleheight="30"
+        app:myCaptionSize="20"
+        app:myCaptionheight="70"
+        app:myNextImageID="@drawable/delete_click"
+        app:myNextText="打开">
+
+    </com.example.qkhqk.myRelativeLayout>
+
+    <com.example.qkhqk.myRelativeLayout
+        android:id="@+id/m1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:myBackImageID="@drawable/delete"
+        app:myBackText="返回"
+        app:myCaption="强一蘧"
+        app:myCaptionLittle="afds"
+        app:myCaptionLittleSize="15"
+        app:myCaptionLittleheight="40"
+        app:myCaptionSize="20"
+        app:myCaptionheight="70"
+        app:myNextImageID="@mipmap/settting48"
+        app:myNextText="打开"
+        tools:ignore="InvalidId"></com.example.qkhqk.myRelativeLayout>
+    <TextView
+        android:id="@+id/asdfds"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <scut.carson_ho.diy_view.SuperEditText
+        android:layout_width="341dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/afsdfdasdfsdf"
+         app:ic_delete="@drawable/dialog_bg"
+        android:text="hfsdkjfhjkd"></scut.carson_ho.diy_view.SuperEditText>
+</LinearLayout>

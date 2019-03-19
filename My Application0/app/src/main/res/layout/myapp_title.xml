@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+ android:background="@color/title"
+ >
+<ImageView
+    android:id="@+id/myapp_title_img_back"
+    android:src="@mipmap/back"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent" />
+<Button
+    android:id="@+id/myapp_title_btn_back"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentTop="true"
+    android:background="@color/title"
+    android:text="返回"
+    android:textColor="#ffffff"
+    android:textSize="20sp" />
+
+<TextView
+    android:id="@+id/myapp_title_tv_caption"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_alignBaseline="@+id/myapp_title_btn_back"
+    android:layout_alignBottom="@+id/myapp_title_btn_back"
+    android:layout_centerHorizontal="true"
+    android:layout_centerInParent="true"
+    android:layout_centerVertical="true"
+    android:layout_toRightOf="@+id/myapp_title_btn_back"
+ android:background="@color/title"
+    android:gravity="center_vertical|center_horizontal"
+    android:text="我的程序标签"
+    android:textColor="#ffffff"
+    android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/myapp_title_btn_config"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:drawableRight="@mipmap/settting64"
+        android:layout_alignParentTop="true"
+ android:background="@color/title"
+        android:text="返回"
+  android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</LinearLayout>
+
+

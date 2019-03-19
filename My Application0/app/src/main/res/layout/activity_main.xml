@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/t1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:onClick="click1"
+            android:scaleType="centerInside"
+            app:srcCompat="@mipmap/run"
+            tools:layout_editor_absoluteX="140dp"
+            tools:layout_editor_absoluteY="367dp" />
+
+        <SurfaceView
+            android:id="@+id/surfaceView"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_toRightOf="@+id/imageView" />
+        <TextureView
+            android:id="@+id/textureView"
+            android:layout_toRightOf="@+id/surfaceView"
+            android:layout_width="100dp"
+
+            android:layout_height="100dp" />
+
+    </RelativeLayout>
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="pops"
+        android:text="test popupwindow"
+        android:id="@+id/bt_pop"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="dialog"
+        android:text="test dialog"
+        android:id="@+id/bt_dialog"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="refreshFile"
+        android:text="test refresh"
+        android:id="@+id/bt_refresh"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:onClick="mycamera"
+        android:text="test camera"
+        android:id="@+id/bt_camera"/>
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="50dp"
+    android:onClick="mycamerasurface"
+    android:text="test camera surface"
+    android:id="@+id/bt_mycamerasurface"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:onClick="mycamera2"
+            android:text="open camera2"
+            android:id="@+id/bt_mycamera2"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:onClick="take"
+            android:text="test take"
+            android:id="@+id/bt_take"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:onClick="mycameraclose"
+            android:text="close camera2"
+            android:id="@+id/bt_mycameraclose"/>
+    </LinearLayout>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="barcode"
+        android:text="test barcode"
+        android:id="@+id/bt_barcode"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:onClick="mycamerastop"
+        android:text="test camera stop"
+        android:id="@+id/bt_mycamestop"/>
+
+<EditText
+    android:layout_width="match_parent"
+   android:outlineAmbientShadowColor="@color/aqua"
+    android:shadowColor="@color/aqua"
+    android:drawableRight="@drawable/delete"
+    android:layout_height="wrap_content" />
+
+    <scut.carson_ho.diy_view.SuperEditText
+        android:id="@+id/t11"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:ic_left_click="@mipmap/settting48"
+        app:ic_left_unclick="@mipmap/back"
+        android:text="asdfasfadsf"
+        android:hint="asfadsafsda"
+        tools:ignore="DuplicateIds" />
+
+
+</LinearLayout>
